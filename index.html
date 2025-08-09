@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini App IA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Mini App de Perguntas para IA</h1>
+        <div class="config">
+            <input type="password" id="apiKey" placeholder="Digite sua API Key">
+            <select id="model">
+                <option value="gpt-4.1-mini">GPT-4.1 Mini</option>
+                <option value="gpt-4.1">GPT-4.1</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <div class="input-area">
+            <input type="text" id="userQuestion" placeholder="Digite sua pergunta...">
+            <button id="askBtn">Perguntar</button>
+        </div>
+
+        <div id="loading" class="hidden">Carregando resposta...</div>
+        <div id="error" class="hidden"></div>
+        <div id="answer" class="hidden"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
